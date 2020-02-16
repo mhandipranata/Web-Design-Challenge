@@ -9,3 +9,7 @@
   height: 50vh;
   background-color: goldenrod;
 }
+
+.image_wrap {
+  float: left;
+}

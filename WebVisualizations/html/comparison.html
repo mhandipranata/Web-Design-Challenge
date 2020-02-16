@@ -12,7 +12,7 @@
 
   <!-- CUSTOM STYLING -->
   <link rel="stylesheet" href="style.css">
-  <title>Hello, world!</title>
+  <title>Weather Analysis!</title>
 </head>
 
 <!-- ALL HTML CODE GOES IN BODY -->
@@ -20,50 +20,71 @@
 <body>
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Navbar</a>
+    <a class="navbar-brand p-3 mb-2 bg-info text-white" href="index.html">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+      <ul class="nav justify-content-end">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="features.html">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pricing.html">Pricing</a>
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            Dropdown link
+            Plots
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="max_temp.html">Maximum Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
           </div>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data_table_v2.html">Data</a>
+        </li>
+        
       </ul>
     </div>
   </nav>
 
-  <!-- CONTENT -->
-  <div class="container-fluid">
-    <h1>Feature Page</h1>
+  <!-- Jumbotron -->
+  
+  <div class="jumbotron"><div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12"><div class="p-3 border bg-light">
+        <h2 class="display-5 text-success">Comparison: Latitude vs. X</h2>
+        <hr class="my-4">
 
-    <!-- COLUMN AREAS -->
-    <div class="row row-cols-2">
-      <div class="col-sm custom-box"> Column 1 </div>
-      <div class="col-sm custom-box-2"> Column 2 </div>
-      <div class="col-sm custom-box-2"> Column 3 </div>
-      <div class="col-sm custom-box"> Column 4 </div>
+        <div class="">
+          <div class="row">
+            <div class="col-md-6 col-sm-3">
+              <h4 class="text-center p-3 mb-2 bg-secondary text-white">vs. Max Temperature</h4>
+              <img src="../images/Fig1.png" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-sm-3">
+              <h4 class="text-center p-3 mb-2 bg-secondary text-white">vs. Humidity</h4>
+              <img src="../images/Fig2.png" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-sm-3">
+              <h4 class="text-center p-3 mb-2 bg-secondary text-white">vs. Cloudiness</h4>
+              <img src="../images/Fig3.png" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-sm-3">
+              <h4 class="text-center p-3 mb-2 bg-secondary text-white">vs. Wind Speed</h4>
+              <img src="../images/Fig4.png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div></div>
     </div>
+  </div></div>
 
-  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -77,5 +98,17 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
 </body>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/">Coding Bootcamp 2017</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 </html>
